@@ -2,7 +2,7 @@
 
 GeoIP2 country blocking with HAProxy.
 
-Downloads GeoLite2 country .csv, splits it into per-country .txt files and copies it over to a OPNsense instance via SSH to the following path:
+Downloads GeoLite2 country .csv, splits it into per-country .txt files and copies them over to a OPNsense instance via SSH to the following path:
 
 ```/etc/haproxy/geoip2```
 
