@@ -44,7 +44,7 @@ vi ./getMaxMindGeo2Lite.sh
 
 ### Adjust the following script header's variables according to your environment (change user and port only if required)
 ```
-YOUR_LICENSE_KEY="<Your_MaxMind_LicenseKey"
+YOUR_LICENSE_KEY="<Your_MaxMind_LicenseKey>"
 OPNSENSE_HOST="<your_opnsense_hostname_or_ip_address>"
 OPNSENSE_USER="root"
 OPNSENSE_SSH_PORT="22"
