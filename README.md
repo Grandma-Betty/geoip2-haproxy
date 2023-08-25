@@ -68,7 +68,7 @@ The above example rejects connections from China and the United States.
 
 ### Cron
 
-GeoLite2 Country database is [updated weekly, every Tuesday](https://dev.maxmind.com/geoip/geoip2/geolite2/).
+GeoLite2 Country database is [updated twice weekly, every Tuesday and Friday](https://dev.maxmind.com/geoip/geoip2/geolite2/).
 
 Add the following cronjob if you wish to stay up to date (replace `/path/to/script`
 with your script path). It pulls latest updates every Wednesday at 06:00 AM.
