@@ -33,6 +33,7 @@ The remote user needs to have administrative privileges on your OPNsense instanc
 Since 2020, MaxMind now requires a registration in order to download free GeoIP2 databases.
 
 Register at maxmind.com, go to "My account" -> "Manage License Keys" and generate a new license key.
+You will also find your account ID there which is needed for this script since Maxmind has changed the according API in the early year of 2024.
 
 ### Pull latest GeoIP2 data and make necessary adjustments
 ```
@@ -44,6 +45,7 @@ vi ./getMaxMindGeo2Lite.sh
 
 ### Adjust the following script header's variables according to your environment (change user and port only if required)
 ```
+YOUR_ACCOUNT_ID="<Your_MaxMind_AccountID>"
 YOUR_LICENSE_KEY="<Your_MaxMind_LicenseKey>"
 OPNSENSE_HOST="<your_opnsense_hostname_or_ip_address>"
 OPNSENSE_USER="root"

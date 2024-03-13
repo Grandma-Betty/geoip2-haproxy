@@ -3,13 +3,14 @@
 # Define variables and values.
 COUNTRIES="countries"
 COUNTRIES_ZIP="${COUNTRIES}.zip"
+YOUR_ACCOUNT_ID=""
 YOUR_LICENSE_KEY=""
 OPNSENSE_HOST=""
 OPNSENSE_USER="root"
 OPNSENSE_SSH_PORT="22"
 
 # Download .zip file from MaxMind.
-wget -q -O $COUNTRIES_ZIP "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=$YOUR_LICENSE_KEY&suffix=zip"
+wget -q -O $COUNTRIES_ZIP --content-disposition --user=$YOUR_ACCOUNT_ID --password=$YOUR_LICENSE_KEY 'https://download.maxmind.com/geoip/databases/GeoLite2-Country-CSV/download?suffix=zip'
 
 if [ "$?" != 0 ]; then
     echo "Error downloading file"
